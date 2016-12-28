@@ -1,6 +1,6 @@
 {
   "name": "clarifai-video-tagging",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A wrapper library that allows tagging for videos",
   "main": "./src/index.js",
   "scripts": {
