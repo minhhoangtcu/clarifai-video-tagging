@@ -1,31 +1,38 @@
-## Clarifai Video Tagging
+Clarifai Video Tagging
+=========
 
 A wrapper library that allows tagging for videos
 
-## Code Example
+## Installation
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+  `npm i clarifai-video-tagging`
+
+## Usage
+
+    const App = require('clarifai-video-tagging');
+    const app = new App(process.env.ID, process.env.SECRET); // Paste your client ID and secret here.
+    
+    // Print out an array of tags for each second
+    app.predictVideo('http://www.w3schools.com/html/mov_bbb.mp4')
+      .then((tag) => {
+        const classes = tag.classes;
+        console.log(classes);
+      });
+      
+  Check out the sample folder for more examples.
 
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
-
-## Installation
-
-Provide code examples and explanations of how to get the project.
+Clarifai v2 API does not offer video tagging, but the first version does. This library is built on top of Clarifai v2 API while still offering the good old video tagging capability. 
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+`predict` is going to return a Promise and within tag, you are getting a JSON with 4 keys: `timestamps`, `classes`, `concept_ids`, and `probs`.
 
-## Tests
+## TODO
 
-Describe and show how to run the tests with code examples.
+- [ ] Allow video bytes tagging
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+Feel free to do whatever you want. This is my first Node.js Module, so I love feedback.
