@@ -1,0 +1,23 @@
+{
+  "name": "clarifai-video-tagging",
+  "version": "0.0.1",
+  "description": "A wrapper library that allows tagging for videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhhoangtcu/clarifai-video-tagging.git"
+  },
+  "author": "Minh Hoang <minh.hoang@tcu.edu> (http://minhhoangtcu.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minhhoangtcu/clarifai-video-tagging/issues"
+  },
+  "homepage": "https://github.com/minhhoangtcu/clarifai-video-tagging#readme",
+  "dependencies": {
+    "clarifai": "^2.0.18",
+    "node-fetch": "^1.6.3"
+  }
+}
