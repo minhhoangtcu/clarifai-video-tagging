@@ -1,5 +1,5 @@
 require('dotenv').config(); // Yes can either store your client ID and secret within an .env file or just paste them directly
-var App = require('./index.js');
+const App = require('clarifai-video-tagging');
 
 const app = new App(process.env.ID, process.env.SECRET);
 // const app = new App('somethingsomething id here', 'secret here'); // paste directly here
