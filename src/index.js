@@ -16,7 +16,7 @@ class App {
       this._app.getToken()
         .then(res => {
 
-          const token = res.access_token;
+          const token = res.accessToken;
           const url = `${BASE}&url=${videoURL}`;
           const headers = {Authorization: `Bearer ${token}`};
 
